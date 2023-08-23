@@ -116,6 +116,13 @@ Semantic, and Ansi-Color faces are included."
    ;; Flyspell
    `(flyspell-duplicate ((,class (:underline ,orange-1))))
    `(flyspell-incorrect ((,class (:underline ,red-1))))
+   ;; Org
+   `(org-code    ((t (:foreground ,red-2))))
+   `(org-drawer  ((t (:foreground ,orange-3))))
+   `(org-level-1 ((t (:bold t :foreground ,green-3))))
+   `(org-level-2 ((t (:bold t :foreground ,blue-2))))
+   `(org-level-3 ((t (:bold t :foreground ,orange-4))))
+   `(org-level-4 ((t (:bold t :foreground ,cyan-2))))
    ;; Realgud
    `(realgud-overlay-arrow1  ((,class (:foreground "dark green"))))
    `(realgud-overlay-arrow2  ((,class (:foreground "#7a4c02"))))
