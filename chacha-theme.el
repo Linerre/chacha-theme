@@ -116,6 +116,15 @@ Semantic, and Ansi-Color faces are included."
    ;; Flyspell
    `(flyspell-duplicate ((,class (:underline ,orange-1))))
    `(flyspell-incorrect ((,class (:underline ,red-1))))
+
+   ;; Latex
+   `(font-latex-warning-face    ((,class (:foreground ,red-3))))
+   `(font-latex-sectioning-1-face ((t (:inherit default))))
+   `(font-latex-sectioning-2-face ((t (:inherit default))))
+   `(font-latex-sectioning-3-face ((t (:inherit default))))
+   `(font-latex-sectioning-4-face ((t (:inherit default))))
+   `(font-latex-sectioning-5-face ((t (:inherit default))))
+
    ;; Org
    `(org-code    ((t (:foreground ,red-2))))
    `(org-drawer  ((t (:foreground ,orange-3))))
