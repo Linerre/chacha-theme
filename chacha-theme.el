@@ -74,6 +74,22 @@ Semantic, and Ansi-Color faces are included."
    ;; Button and link faces
    `(link ((,class (:underline t :foreground ,blue-3))))
    `(link-visited ((,class (:underline t :foreground ,blue-2))))
+
+   `(company-preview-common            ((t (:inherit default))))
+   `(company-preview-search            ((t (:inherit default))))
+   `(company-tooltip-common            ((t ())))
+   `(company-tooltip-common-selection  ((t (:bold t :foreground ,blue-2))))
+   `(company-tooltip                   ((t (:background ,alum-2))))
+   `(company-tooltip-search            ((t ())))
+   `(company-tooltip-search-selection  ((t (:background ,alum-3 :foreground ,alum-6))))
+   `(company-tooltip-selection         ((t (:background ,alum-3 :foreground ,alum-6))))
+   `(company-tooltip-mouse             ((t (:background ,alum-3 :foreground ,alum-6))))
+   `(company-tooltip-preview           ((t (:background ,alum-3 :foreground ,alum-6))))
+   `(company-tooltip-annotation        ((t ())))
+   `(company-tooltip-scrollbar-track   ((t (:background ,alum-2))))
+   `(company-tooltip-scrollbar-thumb   ((t (:background ,blue-2))))
+   ;; `(company-template-field            ((t (:inherit yas-field-highlight-face))))
+
    ;; Gnus faces
    `(gnus-group-news-1 ((,class (:weight bold :foreground ,purple-3))))
    `(gnus-group-news-1-low ((,class (:foreground ,purple-3))))
