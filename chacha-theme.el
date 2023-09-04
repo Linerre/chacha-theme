@@ -58,6 +58,8 @@ Semantic, and Ansi-Color faces are included."
    `(error ((,class (:foreground ,red-3))))
    `(warning ((,class (:foreground ,orange-3))))
    `(success ((,class (:foreground ,green-3))))
+   `(vertical-border   ((t ())))
+   `(separator-line     ((t (:background nil))))
    ;; Font lock faces
    `(font-lock-builtin-face ((,class (:foreground ,purple-2))))
    `(font-lock-comment-face ((,class (:foreground ,red-3))))
