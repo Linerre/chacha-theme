@@ -39,7 +39,7 @@ Semantic, and Ansi-Color faces are included."
    `(default ((,class (:foreground ,alum-6 :background ,alum-1))))
    `(cursor ((,class (:background ,blue-3))))
    ;; Highlighting faces
-   `(fringe ((,class (:background ,alum-2))))
+   `(fringe ((,class (:background ,alum-1))))
    `(highlight ((,class (:background ,alum-3))))
    `(region ((,class (:background ,alum-3))))
    `(secondary-selection ((,class (:background ,blue-0))))
@@ -52,7 +52,6 @@ Semantic, and Ansi-Color faces are included."
    `(mode-line-inactive ((,class (:box (:line-width -1 :style released-button)
 				  :background ,alum-4 :foreground ,alum-6))))
    ;; Escape and prompt faces
-   `(minibuffer-prompt ((,class (:weight bold :foreground ,blue-3))))
    `(escape-glyph ((,class (:foreground ,red-3))))
    `(homoglyph ((,class (:foreground ,red-3))))
    `(error ((,class (:foreground ,red-3))))
@@ -60,6 +59,12 @@ Semantic, and Ansi-Color faces are included."
    `(success ((,class (:foreground ,green-3))))
    `(vertical-border   ((t ())))
    `(separator-line     ((t (:background nil))))
+   ;; Minibuffer completions
+   `(minibuffer-prompt ((,class (:weight bold :foreground ,blue-3))))
+   `(completions-common-part ((,class (:foreground ,blue-2))))
+   `(completions-first-difference ((,class (:foreground ,orange-2))))
+   `(completions-annotations ((,class (:foreground ,alum-5))))
+
    ;; Font lock faces
    `(font-lock-builtin-face ((,class (:foreground ,purple-2))))
    `(font-lock-comment-face ((,class (:foreground ,red-3))))
@@ -142,6 +147,7 @@ Semantic, and Ansi-Color faces are included."
    `(font-latex-sectioning-3-face ((t (:inherit default))))
    `(font-latex-sectioning-4-face ((t (:inherit default))))
    `(font-latex-sectioning-5-face ((t (:inherit default))))
+   `(font-latex-string-face       ((t (:inherit font-lock-string-face))))
 
    ;; Org
    `(org-code    ((t (:foreground ,red-2))))
@@ -172,6 +178,8 @@ Semantic, and Ansi-Color faces are included."
      ((,class (:underline  ,orange-3))))
    `(semantic-tag-boundary-face ((,class (:overline   ,blue-1))))
    `(semantic-unmatched-syntax-face ((,class (:underline  ,red-1))))
+   ;; Cargo
+   `(cargo-process--standard-face ((,class (:inherit default))))
    ;; ANSI colors
    `(ansi-color-black ((,class (:background ,alum-6 :foreground ,alum-6))))
    `(ansi-color-red ((,class (:background ,red-2 :foreground ,red-2))))
