@@ -58,7 +58,7 @@ Semantic, and Ansi-Color faces are included."
    `(warning ((,class (:foreground ,orange-3))))
    `(success ((,class (:foreground ,green-3))))
    `(vertical-border   ((t ())))
-   `(separator-line     ((t (:background nil))))
+   `(separator-line     ((t ())))
    ;; Minibuffer completions
    `(minibuffer-prompt ((,class (:weight bold :foreground ,blue-3))))
    `(completions-common-part ((,class (:foreground ,blue-2))))
