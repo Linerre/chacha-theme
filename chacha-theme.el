@@ -67,8 +67,8 @@ Semantic, and Ansi-Color faces are included."
 
    ;; Font lock faces
    `(font-lock-builtin-face ((,class (:foreground ,purple-2))))
-   `(font-lock-comment-face ((,class (:foreground ,red-3))))
-   `(font-lock-doc-face ((,class (:foreground ,cyan-2))))
+   `(font-lock-comment-face ((,class (:foreground ,red-3, :italic nil))))
+   `(font-lock-doc-face ((,class (:foreground ,cyan-2 :italic nil))))
    `(font-lock-constant-face ((,class (:foreground ,purple-2))))
    `(font-lock-number-face ((t (:inherit font-lock-constant-face))))
    `(highlight-numbers-number         ((t (:inherit font-lock-constant-face))))
