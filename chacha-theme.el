@@ -26,13 +26,13 @@ Semantic, and Ansi-Color faces are included."
       (green-1 "#8ae234") (cham-2 "#73d216") (green-3 "#4e9a06")
       (blue-1 "#729fcf") (blue-2 "#3465a4") (blue-3 "#204a87")
       (purple-1 "#ad7fa8") (purple-2 "#75507b") (purple-3 "#5c3566")
-      (red-1 "#ef2929")  (red-2 "#cc0000")  (red-3 "#a40000")
+      (red-1 "#ef2929")  (red-2 "#cc0000")  (red-3 "#a40000") (red-4 "#8a0101")
       (alum-1 "#eeeeec") (alum-2 "#d3d7cf") (alum-3 "#babdb6")
       (alum-4 "#888a85") (alum-5 "#5f615c") (alum-6 "#2e3436")
       ;; Not in Tango palette; used for better contrast.
       (cham-4 "#346604") (blue-0 "#8cc4ff") (orange-4 "#b35000")
       ;; Not in Tango palette; used for ANSI cyan.
-      (cyan-1 "#34e2e2") (cyan-2 "#06989a"))
+      (cyan-1 "#34e2e2") (cyan-2 "#06989a") (cyan-3 "#076678"))
 
   (custom-theme-set-faces
    'chacha
@@ -50,7 +50,7 @@ Semantic, and Ansi-Color faces are included."
    `(mode-line ((,class (:box (:line-width -1 :style released-button)
 			 :background ,alum-2 :foreground ,alum-6))))
    `(mode-line-inactive ((,class (:box (:line-width -1 :style released-button)
-				  :background ,alum-4 :foreground ,alum-6))))
+				  :background ,alum-4 :foreground ,alum-5))))
    ;; Escape and prompt faces
    `(escape-glyph ((,class (:foreground ,red-3))))
    `(homoglyph ((,class (:foreground ,red-3))))
@@ -67,8 +67,8 @@ Semantic, and Ansi-Color faces are included."
 
    ;; Font lock faces
    `(font-lock-builtin-face ((,class (:foreground ,purple-2))))
-   `(font-lock-comment-face ((,class (:foreground ,red-3, :italic nil))))
-   `(font-lock-doc-face ((,class (:foreground ,cyan-2 :italic nil))))
+   `(font-lock-comment-face ((,class (:foreground ,red-4, :italic nil))))
+   `(font-lock-doc-face ((,class (:foreground ,cyan-3 :italic nil))))
    `(font-lock-constant-face ((,class (:foreground ,purple-2))))
    `(font-lock-number-face ((t (:inherit font-lock-constant-face))))
    `(highlight-numbers-number         ((t (:inherit font-lock-constant-face))))
@@ -148,6 +148,8 @@ Semantic, and Ansi-Color faces are included."
    `(font-latex-sectioning-4-face ((t (:inherit default))))
    `(font-latex-sectioning-5-face ((t (:inherit default))))
    `(font-latex-string-face       ((t (:inherit font-lock-string-face))))
+   `(font-latex-subscript-face    ((t (:inherit font-latex-math-face))))
+   `(font-latex-superscript-face    ((t (:inherit font-latex-math-face))))
 
    ;; Org
    `(org-code    ((t (:foreground ,red-2))))
@@ -156,6 +158,10 @@ Semantic, and Ansi-Color faces are included."
    `(org-level-2 ((t (:bold t :foreground ,blue-2))))
    `(org-level-3 ((t (:bold t :foreground ,orange-4))))
    `(org-level-4 ((t (:bold t :foreground ,cyan-2))))
+   `(org-block                 ((t (:foreground ,alum-6 :background "gainsboro"))))
+   `(org-block-begin-line      ((t (:foreground ,alum-6 :background "gainsboro" :extend t))))
+   `(org-block-end-line        ((t (:foreground ,alum-6 :background "gainsboro" :extend t))))
+
    ;; Realgud
    `(realgud-overlay-arrow1  ((,class (:foreground "dark green"))))
    `(realgud-overlay-arrow2  ((,class (:foreground "#7a4c02"))))
@@ -166,18 +172,6 @@ Semantic, and Ansi-Color faces are included."
    `(realgud-file-name             ((,class :foreground "dark green")))
    `(realgud-line-number           ((,class :foreground ,purple-3)))
    `(realgud-backtrace-number      ((,class :foreground ,blue-3 :weight bold)))
-   ;; Semantic faces
-   `(semantic-decoration-on-includes ((,class (:underline  ,cham-4))))
-   `(semantic-decoration-on-private-members-face
-     ((,class (:background ,alum-2))))
-   `(semantic-decoration-on-protected-members-face
-     ((,class (:background ,alum-2))))
-   `(semantic-decoration-on-unknown-includes
-     ((,class (:background ,choc-3))))
-   `(semantic-decoration-on-unparsed-includes
-     ((,class (:underline  ,orange-3))))
-   `(semantic-tag-boundary-face ((,class (:overline   ,blue-1))))
-   `(semantic-unmatched-syntax-face ((,class (:underline  ,red-1))))
    ;; Cargo
    `(cargo-process--standard-face ((,class (:inherit default))))
    ;; Not italic in Rust string
@@ -192,21 +186,53 @@ Semantic, and Ansi-Color faces are included."
    `(ansi-color-magenta ((,class (:background ,purple-2 :foreground ,purple-2))))
    `(ansi-color-cyan ((,class (:background ,cyan-2 :foreground ,cyan-2))))
    `(ansi-color-white ((,class (:background ,alum-2 :foreground ,alum-2))))
-   `(ansi-color-bright-black ((,class (:background ,alum-5
-				       :foreground ,alum-5))))
+   `(ansi-color-bright-black ((,class (:background ,alum-5 :foreground ,alum-5))))
    `(ansi-color-bright-red ((,class (:background ,red-1 :foreground ,red-1))))
-   `(ansi-color-bright-green ((,class (:background ,green-1
-				       :foreground ,green-1))))
-   `(ansi-color-bright-yellow ((,class (:background ,butter-1
-					:foreground ,butter-1))))
-   `(ansi-color-bright-blue ((,class (:background ,blue-1
-				      :foreground ,blue-1))))
-   `(ansi-color-bright-magenta ((,class (:background ,purple-1
-					 :foreground ,purple-1))))
-   `(ansi-color-bright-cyan ((,class (:background ,cyan-1
-				      :foreground ,cyan-1))))
-   `(ansi-color-bright-white ((,class (:background ,alum-1
-				       :foreground ,alum-1))))))
+   `(ansi-color-bright-green ((,class (:background ,green-1 :foreground ,green-1))))
+   `(ansi-color-bright-yellow ((,class (:background ,butter-1 :foreground ,butter-1))))
+   `(ansi-color-bright-blue ((,class (:background ,blue-1 :foreground ,blue-1))))
+   `(ansi-color-bright-magenta ((,class (:background ,purple-1 :foreground ,purple-1))))
+   `(ansi-color-bright-cyan ((,class (:background ,cyan-1 :foreground ,cyan-1))))
+   `(ansi-color-bright-white ((,class (:background ,alum-1 :foreground ,alum-1))))
+
+   ;; lsp: disable all lsp syntax highlighting
+   ;; https://emacs-lsp.github.io/lsp-mode/page/settings/semantic-tokens/
+   ;; `(lsp-modeline-code-actions-face ((t (:foreground ,fg))))
+   ;; `(lsp-modeline-code-actions-preferred-face ((t (:foreground ,teal))))
+   `(lsp-face-semhl-comment ((t (:inherit font-lock-comment-face))))
+   `(lsp-face-semhl-constant ((t ((:inherit font-lock-constant-face)))))
+   `(lsp-face-semhl-default-library ((t ())))
+   `(lsp-face-semhl-definition ((t ())))
+   ;; `(lsp-face-semhl-deprecated ((t ())))
+   `(lsp-face-semhl-enum ((t ())))
+   `(lsp-face-semhl-event ((t ())))
+   `(lsp-face-semhl-function ((t ())))
+   `(lsp-face-semhl-implemntation ((t ())))
+   `(lsp-face-semhl-interface ((t ())))
+   `(lsp-face-semhl-keyword ((t (:inherit font-lock-keyword-face))))
+   `(lsp-face-semhl-label ((t ())))
+   `(lsp-face-semhl-macro ((t (:inherit font-lock-builtin-face))))
+   `(lsp-face-semhl-member ((t ())))
+   `(lsp-face-semhl-method ((t ())))
+   `(lsp-face-semhl-namespace ((t ())))
+   `(lsp-face-semhl-number ((t (:inherit font-lock-number-face))))
+   `(lsp-face-semhl-operator ((t ())))
+   `(lsp-face-semhl-parameter ((t ())))
+   `(lsp-face-semhl-property ((t ())))
+   `(lsp-face-semhl-regexp ((t ())))
+   `(lsp-face-semhl-static ((t ())))
+   `(lsp-face-semhl-string ((t (:inherit font-lock-string-face))))
+   `(lsp-face-semhl-struct ((t ())))
+   `(lsp-face-semhl-type ((t ())))
+   `(lsp-face-semhl-type-parameter ((t ())))
+   `(lsp-face-semhl-variable ((t ())))
+   ))
+
+(and load-file-name
+     (boundp 'custom-theme-load-path)
+     (add-to-list 'custom-theme-load-path
+                  (file-name-as-directory
+                   (file-name-directory load-file-name))))
 
 (provide-theme 'chacha)
 
