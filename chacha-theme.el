@@ -158,9 +158,10 @@ Semantic, and Ansi-Color faces are included."
    `(org-level-2 ((t (:bold t :foreground ,blue-2))))
    `(org-level-3 ((t (:bold t :foreground ,orange-4))))
    `(org-level-4 ((t (:bold t :foreground ,cyan-2))))
-   `(org-block                 ((t (:foreground ,alum-6 :background "gainsboro"))))
-   `(org-block-begin-line      ((t (:foreground ,alum-6 :background "gainsboro" :extend t))))
-   `(org-block-end-line        ((t (:foreground ,alum-6 :background "gainsboro" :extend t))))
+   `(org-block   ((t (:foreground ,alum-6 :background "gainsboro"))))
+   `(org-table   ((t (:foreground ,cyan-3))))
+   `(org-block-begin-line   ((t (:foreground ,alum-4 :background "gainsboro" :extend t))))
+   `(org-block-end-line     ((t (:foreground ,alum-4 :background "gainsboro" :extend t))))
 
    ;; Realgud
    `(realgud-overlay-arrow1  ((,class (:foreground "dark green"))))
