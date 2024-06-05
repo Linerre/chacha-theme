@@ -26,7 +26,7 @@ Semantic, and Ansi-Color faces are included."
       (green-1 "#8ae234") (cham-2 "#73d216") (green-3 "#4e9a06")
       (blue-1 "#729fcf") (blue-2 "#3465a4") (blue-3 "#204a87")
       (purple-1 "#ad7fa8") (purple-2 "#75507b") (purple-3 "#5c3566")
-      (red-1 "#ef2929")  (red-2 "#cc0000")  (red-3 "#a40000") (red-4 "#8a0101")
+      (red-1 "#ef2929")  (red-2 "#cc0000")  (red-3 "#a40000") (red-4 "#8a0101") (red-5 "#aa3731")
       (alum-1 "#eeeeec") (alum-2 "#d3d7cf") (alum-3 "#babdb6")
       (alum-4 "#888a85") (alum-5 "#5f615c") (alum-6 "#2e3436")
       ;; Not in Tango palette; used for better contrast.
@@ -67,7 +67,7 @@ Semantic, and Ansi-Color faces are included."
 
    ;; Font lock faces
    `(font-lock-builtin-face ((,class (:foreground ,purple-2))))
-   `(font-lock-comment-face ((,class (:foreground ,red-4, :italic nil))))
+   `(font-lock-comment-face ((,class (:foreground ,red-5, :italic nil))))
    `(font-lock-doc-face ((,class (:foreground ,cyan-3 :italic nil))))
    `(font-lock-constant-face ((,class (:foreground ,purple-2))))
    `(font-lock-number-face ((t (:inherit font-lock-constant-face))))
