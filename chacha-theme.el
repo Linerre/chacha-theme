@@ -162,6 +162,7 @@ Semantic, and Ansi-Color faces are included."
    `(org-table   ((t (:foreground ,cyan-3))))
    `(org-block-begin-line   ((t (:foreground ,alum-4 :background "gainsboro" :extend t))))
    `(org-block-end-line     ((t (:foreground ,alum-4 :background "gainsboro" :extend t))))
+   `(org-headline-done      ((t ())))
 
    ;; Realgud
    `(realgud-overlay-arrow1  ((,class (:foreground "dark green"))))
