@@ -28,7 +28,8 @@ Semantic, and Ansi-Color faces are included."
       (purple-1 "#ad7fa8") (purple-2 "#75507b") (purple-3 "#5c3566")
       (red-1 "#ef2929")  (red-2 "#cc0000")  (red-3 "#a40000") (red-4 "#8a0101") (red-5 "#aa3731")
       (alum-1 "#eeeeec") (alum-2 "#d3d7cf") (alum-3 "#babdb6")
-      (alum-4 "#888a85") (alum-5 "#5f615c") (alum-6 "#2e3436")
+      (alum-4 "#888a85") (alum-5 "#5f615c") (alum-6 "#4a4c47")
+      ;; darker alum6: 363833; even darker alum6: 2e3436
       ;; Not in Tango palette; used for better contrast.
       (cham-4 "#346604") (blue-0 "#8cc4ff") (orange-4 "#b35000")
       ;; Not in Tango palette; used for ANSI cyan.
@@ -73,9 +74,9 @@ Semantic, and Ansi-Color faces are included."
    `(font-lock-number-face     ((t (:inherit font-lock-constant-face))))
    `(highlight-numbers-number  ((t (:inherit font-lock-constant-face))))
    `(font-lock-function-name-face ((,class (:foreground ,blue-2))))
-   `(font-lock-keyword-face ((t (:foreground ,cham-4))))
+   `(font-lock-keyword-face ((t (:bold t))))
    `(font-lock-string-face  ((t (:foreground ,green-3))))
-   '(font-lock-type-face ((t ())))
+   '(font-lock-type-face    ((t ())))
    '(font-lock-variable-name-face ((t ())))
    `(font-lock-preprocessor-face ((t (:foreground ,alum-4))))
    ;; Button and link faces
