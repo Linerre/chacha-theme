@@ -180,6 +180,9 @@ Semantic, and Ansi-Color faces are included."
    ;; Not italic in Rust string
    `(rust-string-interpolation ((,class (:inherit font-lock-string-face :italic nil))))
 
+   ;; CSS
+   `(css-property  ((t (:foreground ,alum-4))))
+
    ;; ANSI colors
    `(ansi-color-black ((,class (:background ,alum-6 :foreground ,alum-6))))
    `(ansi-color-red ((,class (:background ,red-2 :foreground ,red-2))))
