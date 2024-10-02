@@ -181,7 +181,7 @@ Semantic, and Ansi-Color faces are included."
    `(rust-string-interpolation ((,class (:inherit font-lock-string-face :italic nil))))
 
    ;; CSS
-   `(css-property  ((t (:foreground ,alum-4))))
+   `(css-property  ((t (:foreground ,cyan-3))))
 
    ;; ANSI colors
    `(ansi-color-black ((,class (:background ,alum-6 :foreground ,alum-6))))
