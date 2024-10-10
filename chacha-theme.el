@@ -28,7 +28,7 @@ Semantic, and Ansi-Color faces are included."
       (purple-1 "#ad7fa8") (purple-2 "#75507b") (purple-3 "#5c3566")
       (red-1 "#ef2929")  (red-2 "#cc0000")  (red-3 "#a40000")
       (red-4 "#8a0101") (red-5 "#aa3731")
-      (alum-1 "#eeeeec") (alum-2 "#d3d7cf") (alum-3 "#babdb6")
+      (alum-1 "#eeeeec") (alum-2 "#d3d7cf") (alum-3 "#c5c8c1")
       (alum-4 "#888a85") (alum-5 "#5f615c") (alum-6 "#4a4c47")
       ;; darker alum6: 363833; even darker alum6: 2e3436
       ;; Not in Tango palette; used for better contrast.
@@ -39,11 +39,11 @@ Semantic, and Ansi-Color faces are included."
   (custom-theme-set-faces
    'chacha
    `(default ((,class (:foreground ,alum-6 :background ,alum-1))))
-   `(cursor ((,class (:background ,blue-3))))
+   `(cursor  ((,class (:background ,blue-3))))
    ;; Highlighting faces
-   `(fringe ((,class (:background ,alum-1))))
+   `(fringe  ((,class (:background ,alum-1))))
    `(highlight ((,class (:background ,alum-3))))
-   `(region ((,class (:background ,alum-3))))
+   `(region    ((,class (:background ,alum-3))))
    `(secondary-selection ((,class (:background ,blue-0))))
    `(isearch ((,class (:foreground "#ffffff" :background ,orange-3))))
    `(lazy-highlight ((t (:background ,choc-1))))
