@@ -23,16 +23,16 @@ Semantic, and Ansi-Color faces are included."
       (butter-1 "#fce94f") (butter-2 "#edd400") (butter-3 "#c4a000")
       (orange-1 "#fcaf3e") (orange-2 "#f57900") (orange-3 "#ce5c00")
       (choc-1 "#e9b96e") (choc-2 "#c17d11") (choc-3 "#8f5902")
-      (green-1 "#8ae234") (cham-2 "#73d216") (green-3 "#4e9a06")
+      (green-1 "#8ae234") (green-2 "#73d216") (green-3 "#4e9a06")
       (blue-1 "#729fcf") (blue-2 "#3465a4") (blue-3 "#204a87")
       (purple-1 "#ad7fa8") (purple-2 "#75507b") (purple-3 "#5c3566")
       (red-1 "#ef2929")  (red-2 "#cc0000")  (red-3 "#a40000")
       (red-4 "#8a0101") (red-5 "#aa3731")
       (alum-1 "#eeeeec") (alum-2 "#d3d7cf") (alum-3 "#c5c8c1")
-      (alum-4 "#888a85") (alum-5 "#5f615c") (alum-6 "#4a4c47")
+      (alum-4 "#888a85") (alum-5 "#5f615c") (alum-6 "#4d5049")
       ;; darker alum6: 363833; even darker alum6: 2e3436
       ;; Not in Tango palette; used for better contrast.
-      (cham-4 "#346604") (blue-0 "#8cc4ff") (orange-4 "#b35000")
+      (green-4 "#346604") (blue-0 "#8cc4ff") (orange-4 "#b35000")
       ;; Not in Tango palette; used for ANSI cyan.
       (cyan-1 "#34e2e2") (cyan-2 "#06989a") (cyan-3 "#076678"))
 
@@ -76,7 +76,7 @@ Semantic, and Ansi-Color faces are included."
    `(font-lock-number-face     ((t (:inherit font-lock-constant-face))))
    `(highlight-numbers-number  ((t (:inherit font-lock-constant-face))))
    `(font-lock-function-name-face ((,class (:foreground ,blue-2))))
-   `(font-lock-keyword-face ((t (:bold t))))
+   `(font-lock-keyword-face ((t (:foreground "#171717"))))
    `(font-lock-string-face  ((t (:foreground ,green-3))))
    '(font-lock-type-face    ((t ())))
    '(font-lock-variable-name-face ((t ())))
