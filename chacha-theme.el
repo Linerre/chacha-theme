@@ -23,16 +23,16 @@ Semantic, and Ansi-Color faces are included."
       (butter-1 "#fce94f") (butter-2 "#edd400") (butter-3 "#c4a000")
       (orange-1 "#fcaf3e") (orange-2 "#f57900") (orange-3 "#ce5c00")
       (choc-1 "#e9b96e") (choc-2 "#c17d11") (choc-3 "#8f5902")
-      (green-1 "#8ae234") (green-2 "#73d216") (green-3 "#4e9a06")
+      (green-1 "#73d216") (green-2 "#4e9a06") (green-3 "#3b4e3b")
       (blue-1 "#729fcf") (blue-2 "#3465a4") (blue-3 "#204a87")
       (purple-1 "#ad7fa8") (purple-2 "#75507b") (purple-3 "#5c3566")
       (red-1 "#ef2929")  (red-2 "#cc0000")  (red-3 "#a40000")
       (red-4 "#8a0101") (red-5 "#aa3731")
       (alum-1 "#eeeeec") (alum-2 "#d3d7cf") (alum-3 "#c5c8c1")
-      (alum-4 "#888a85") (alum-5 "#5f615c") (alum-6 "#4d5049")
+      (alum-4 "#888a85") (alum-5 "#5f615c") (alum-6 "#495049")
       ;; darker alum6: 363833; even darker alum6: 2e3436
       ;; Not in Tango palette; used for better contrast.
-      (green-4 "#346604") (blue-0 "#8cc4ff") (orange-4 "#b35000")
+      (green-4 "#bccdbc") (blue-0 "#8cc4ff") (orange-4 "#b35000")
       ;; Not in Tango palette; used for ANSI cyan.
       (cyan-1 "#34e2e2") (cyan-2 "#06989a") (cyan-3 "#076678"))
 
@@ -43,7 +43,7 @@ Semantic, and Ansi-Color faces are included."
    ;; Highlighting faces
    `(fringe  ((,class (:background ,alum-1))))
    `(highlight ((,class (:background ,alum-3))))
-   `(region    ((,class (:background ,alum-3))))
+   `(region    ((,class (:background ,green-4))))
    `(secondary-selection ((,class (:background ,blue-0))))
    `(isearch ((,class (:foreground "#ffffff" :background ,orange-3))))
    `(lazy-highlight ((t (:background ,choc-1))))
@@ -59,7 +59,7 @@ Semantic, and Ansi-Color faces are included."
    `(homoglyph ((,class (:foreground ,red-3))))
    `(error ((,class (:foreground ,red-3))))
    `(warning ((,class (:foreground ,orange-3))))
-   `(success ((,class (:foreground ,green-3))))
+   `(success ((,class (:foreground ,green-2))))
    `(vertical-border   ((t ())))
    `(separator-line     ((t ())))
    ;; Minibuffer completions
@@ -77,14 +77,13 @@ Semantic, and Ansi-Color faces are included."
    `(highlight-numbers-number  ((t (:inherit font-lock-constant-face))))
    `(font-lock-function-name-face ((,class (:foreground ,blue-2))))
    `(font-lock-keyword-face ((t (:foreground "#171717"))))
-   `(font-lock-string-face  ((t (:foreground ,green-3))))
+   `(font-lock-string-face  ((t (:foreground ,green-2))))
    '(font-lock-type-face    ((t ())))
    '(font-lock-variable-name-face ((t ())))
    `(font-lock-preprocessor-face ((t (:foreground ,alum-4))))
    ;; Button and link faces
    `(link ((,class (:underline t :foreground ,blue-3))))
    `(link-visited ((,class (:underline t :foreground ,blue-2))))
-
    `(company-preview-common            ((t (:inherit default))))
    `(company-preview-search            ((t (:inherit default))))
    `(company-tooltip-common            ((t ())))
@@ -116,10 +115,10 @@ Semantic, and Ansi-Color faces are included."
    `(gnus-group-mail-1-low ((,class (:foreground ,purple-3))))
    `(gnus-group-mail-2 ((,class (:weight bold :foreground ,blue-3))))
    `(gnus-group-mail-2-low ((,class (:foreground ,blue-3))))
-   `(gnus-group-mail-3 ((,class (:weight bold :foreground ,green-3))))
-   `(gnus-group-mail-3-low ((,class (:foreground ,green-3))))
+   `(gnus-group-mail-3 ((,class (:weight bold :foreground ,green-2))))
+   `(gnus-group-mail-3-low ((,class (:foreground ,green-2))))
    `(gnus-group-mail-low ((,class (:foreground ,alum-4))))
-   `(gnus-header-content ((,class (:foreground ,green-3))))
+   `(gnus-header-content ((,class (:foreground ,green-2))))
    `(gnus-header-from ((,class (:weight bold :foreground ,butter-3))))
    `(gnus-header-subject ((,class (:foreground ,red-3))))
    `(gnus-header-name ((,class (:foreground ,blue-3))))
@@ -131,7 +130,7 @@ Semantic, and Ansi-Color faces are included."
    `(message-header-subject ((,class (:foreground ,red-3))))
    `(message-header-to ((,class (:weight bold :foreground ,butter-3))))
    `(message-cited-text ((,class (:slant italic :foreground ,alum-5))))
-   `(message-separator ((,class (:weight bold :foreground ,green-3))))
+   `(message-separator ((,class (:weight bold :foreground ,green-2))))
    ;; SMerge
    `(smerge-refined-change ((,class (:background ,purple-1))))
    ;; Ediff
@@ -190,7 +189,7 @@ Semantic, and Ansi-Color faces are included."
    ;; ANSI colors
    `(ansi-color-black ((,class (:background ,alum-6 :foreground ,alum-6))))
    `(ansi-color-red ((,class (:background ,red-2 :foreground ,red-2))))
-   `(ansi-color-green ((,class (:background ,green-3 :foreground ,green-3))))
+   `(ansi-color-green ((,class (:background ,green-2 :foreground ,green-2))))
    `(ansi-color-yellow ((,class (:background ,butter-3 :foreground ,butter-3))))
    `(ansi-color-blue ((,class (:background ,blue-2 :foreground ,blue-2))))
    `(ansi-color-magenta ((,class (:background ,purple-2 :foreground ,purple-2))))
