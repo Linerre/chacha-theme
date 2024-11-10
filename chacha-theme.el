@@ -156,15 +156,23 @@ Semantic, and Ansi-Color faces are included."
    ;; Org
    `(org-code    ((t (:foreground ,red-2))))
    `(org-drawer  ((t (:foreground ,orange-3))))
-   `(org-level-1 ((t (:bold t :foreground ,green-3))))
-   `(org-level-2 ((t (:bold t :foreground ,blue-2))))
-   `(org-level-3 ((t (:bold t :foreground ,orange-4))))
-   `(org-level-4 ((t (:bold t :foreground ,cyan-2))))
+   `(org-level-1 ((t (:foreground ,green-2))))
+   `(org-level-2 ((t (:foreground ,blue-2))))
+   `(org-level-3 ((t (:foreground ,orange-4))))
+   `(org-level-4 ((t (:foreground ,cyan-2))))
    `(org-block   ((t (:foreground ,alum-6 :background "gainsboro"))))
    `(org-table   ((t (:foreground ,cyan-3))))
    `(org-block-begin-line   ((t (:foreground ,alum-4 :background "gainsboro" :extend t))))
    `(org-block-end-line     ((t (:foreground ,alum-4 :background "gainsboro" :extend t))))
    `(org-headline-done      ((t ())))
+
+   ;; Meow
+   `(meow-insert-cursor ((t (:background ,blue-3))))
+   `(meow-beacon-cursor ((t (:background ,blue-3))))
+   `(meow-keypad-cursor ((t (:background ,blue-3))))
+   `(meow-normal-cursor ((t (:background "#608060"))))
+   `(meow-unknown-cursor ((t (:background ,alum-4))))
+   `(meow-search-highlight ((t (:background ,alum-3))))
 
    ;; Realgud
    `(realgud-overlay-arrow1  ((,class (:foreground "dark green"))))
