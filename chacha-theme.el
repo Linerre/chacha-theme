@@ -43,11 +43,13 @@ Semantic, and Ansi-Color faces are included."
    ;; Highlighting faces
    `(fringe  ((,class (:background ,alum-1))))
    `(highlight ((,class (:background ,alum-3))))
+   `(hi-yellow ((t (:background ,choc-1))))
    `(region    ((,class (:background ,green-4))))
    `(secondary-selection ((,class (:background ,blue-0))))
    `(isearch ((,class (:foreground "#ffffff" :background ,orange-3))))
    `(lazy-highlight ((t (:background ,choc-1))))
-   `(line-number-current-line ((t (:background ,choc-1))))
+   `(line-number ((t (:inherit default :foreground: ,alum-4))))
+   `(line-number-current-line ((t (:inherit line-number :background ,choc-1))))
    `(trailing-whitespace ((t (:background ,red-1))))
    ;; Mode line faces
    `(mode-line ((,class (:box (:line-width -1 :style released-button)
