@@ -29,10 +29,11 @@ Semantic, and Ansi-Color faces are included."
       (red-1 "#ef2929")  (red-2 "#cc0000")  (red-3 "#a40000")
       (red-4 "#8a0101") (red-5 "#aa3731")
       (alum-1 "#eeeeec") (alum-2 "#d3d7cf") (alum-3 "#c5c8c1")
-      (alum-4 "#888a85") (alum-5 "#5f615c") (alum-6 "#495049")
+      (alum-4 "#888a85") (alum-5 "#5f615c") (alum-6 "#4c504c")
       ;; darker alum6: 363833; even darker alum6: 2e3436
       ;; Not in Tango palette; used for better contrast.
       (green-4 "#bccdbc") (blue-0 "#8cc4ff") (orange-4 "#b35000")
+      (green-5 "#397104")
       ;; Not in Tango palette; used for ANSI cyan.
       (cyan-1 "#34e2e2") (cyan-2 "#06989a") (cyan-3 "#076678"))
 
@@ -56,6 +57,9 @@ Semantic, and Ansi-Color faces are included."
 			 :background ,alum-2 :foreground ,alum-6))))
    `(mode-line-inactive ((,class (:box (:line-width -1 :style released-button)
 				  :background ,alum-4 :foreground ,alum-5))))
+   ;; Tab bars
+   `(tab-bar-tab-inactive ((t (:background ,alum-4 :foreground ,alum-5))))
+
    ;; Escape and prompt faces
    `(escape-glyph ((,class (:foreground ,red-3))))
    `(homoglyph ((,class (:foreground ,red-3))))
@@ -79,7 +83,7 @@ Semantic, and Ansi-Color faces are included."
    `(highlight-numbers-number  ((t (:inherit font-lock-constant-face))))
    `(font-lock-function-name-face ((,class (:foreground ,blue-2))))
    `(font-lock-keyword-face ((t (:foreground "#171717"))))
-   `(font-lock-string-face  ((t (:foreground ,green-2))))
+   `(font-lock-string-face  ((t (:foreground ,green-5))))
    '(font-lock-type-face    ((t ())))
    '(font-lock-variable-name-face ((t ())))
    `(font-lock-preprocessor-face ((t (:foreground ,alum-4))))
@@ -117,10 +121,10 @@ Semantic, and Ansi-Color faces are included."
    `(gnus-group-mail-1-low ((,class (:foreground ,purple-3))))
    `(gnus-group-mail-2 ((,class (:weight bold :foreground ,blue-3))))
    `(gnus-group-mail-2-low ((,class (:foreground ,blue-3))))
-   `(gnus-group-mail-3 ((,class (:weight bold :foreground ,green-2))))
-   `(gnus-group-mail-3-low ((,class (:foreground ,green-2))))
+   `(gnus-group-mail-3 ((,class (:weight bold :foreground ,green-5))))
+   `(gnus-group-mail-3-low ((,class (:foreground ,green-5))))
    `(gnus-group-mail-low ((,class (:foreground ,alum-4))))
-   `(gnus-header-content ((,class (:foreground ,green-2))))
+   `(gnus-header-content ((,class (:foreground ,green-5))))
    `(gnus-header-from ((,class (:weight bold :foreground ,butter-3))))
    `(gnus-header-subject ((,class (:foreground ,red-3))))
    `(gnus-header-name ((,class (:foreground ,blue-3))))
@@ -158,7 +162,7 @@ Semantic, and Ansi-Color faces are included."
    ;; Org
    `(org-code    ((t (:foreground ,red-2))))
    `(org-drawer  ((t (:foreground ,orange-3))))
-   `(org-level-1 ((t (:foreground ,green-2))))
+   `(org-level-1 ((t (:foreground ,green-5))))
    `(org-level-2 ((t (:foreground ,blue-2))))
    `(org-level-3 ((t (:foreground ,orange-4))))
    `(org-level-4 ((t (:foreground ,cyan-2))))
@@ -190,6 +194,9 @@ Semantic, and Ansi-Color faces are included."
    `(cargo-process--standard-face ((,class (:inherit default))))
    ;; Not italic in Rust string
    `(rust-string-interpolation ((,class (:inherit font-lock-string-face :italic nil))))
+
+   ;; magit
+   `(magit-section-highlight   ((t (:background "grey85"))))
 
    ;; CSS
    `(css-property  ((t (:foreground ,cyan-3))))
@@ -244,8 +251,7 @@ Semantic, and Ansi-Color faces are included."
    `(lsp-face-semhl-struct ((t ())))
    `(lsp-face-semhl-type ((t ())))
    `(lsp-face-semhl-type-parameter ((t ())))
-   `(lsp-face-semhl-variable ((t ())))
-   ))
+   `(lsp-face-semhl-variable ((t ())))))
 
 (and load-file-name
      (boundp 'custom-theme-load-path)
