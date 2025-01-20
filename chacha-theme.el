@@ -86,7 +86,9 @@ Semantic, and Ansi-Color faces are included."
    `(font-lock-string-face  ((t (:foreground ,green-5))))
    '(font-lock-type-face    ((t ())))
    '(font-lock-variable-name-face ((t ())))
+   '(font-lock-bracket-face ((t ())))
    `(font-lock-preprocessor-face ((t (:foreground ,alum-4))))
+
    ;; Button and link faces
    `(link ((,class (:underline t :foreground ,blue-3))))
    `(link-visited ((,class (:underline t :foreground ,blue-2))))
@@ -176,7 +178,8 @@ Semantic, and Ansi-Color faces are included."
    `(meow-insert-cursor ((t (:background ,blue-3))))
    `(meow-beacon-cursor ((t (:background ,blue-3))))
    `(meow-keypad-cursor ((t (:background ,blue-3))))
-   `(meow-normal-cursor ((t (:background "#608060"))))
+   `(meow-normal-cursor ((t (:background ,blue-3))))
+   ;; `(meow-normal-cursor ((t (:background "#608060"))))
    `(meow-unknown-cursor ((t (:background ,alum-4))))
    `(meow-search-highlight ((t (:background ,alum-3))))
 
