@@ -53,10 +53,8 @@ Semantic, and Ansi-Color faces are included."
    `(line-number-current-line ((t (:inherit line-number :background ,choc-1))))
    `(trailing-whitespace ((t (:background ,red-1))))
    ;; Mode line faces
-   `(mode-line ((,class (:box (:line-width -1 :style released-button)
-			 :background ,alum-2 :foreground ,alum-6))))
-   `(mode-line-inactive ((,class (:box (:line-width -1 :style released-button)
-				  :background ,alum-4 :foreground ,alum-5))))
+   `(mode-line ((t (:box nil :background ,alum-2 :foreground ,alum-6))))
+   `(mode-line-inactive ((t (:box nil :background ,alum-4 :foreground ,alum-5))))
    ;; Tab bars
    `(tab-bar-tab-inactive ((t (:background ,alum-4 :foreground ,alum-5))))
 
