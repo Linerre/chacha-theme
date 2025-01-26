@@ -56,7 +56,8 @@ Semantic, and Ansi-Color faces are included."
    `(mode-line ((t (:box nil :background ,alum-2 :foreground ,alum-6))))
    `(mode-line-inactive ((t (:box nil :background ,alum-4 :foreground ,alum-5))))
    ;; Tab bars
-   `(tab-bar-tab-inactive ((t (:background ,alum-4 :foreground ,alum-5))))
+   `(tab-bar-tab          ((t (:box unspecified))))
+   `(tab-bar-tab-inactive ((t (:background ,alum-4 :foreground ,alum-5 :box unspecified))))
 
    ;; Escape and prompt faces
    `(escape-glyph ((,class (:foreground ,red-3))))
@@ -77,15 +78,16 @@ Semantic, and Ansi-Color faces are included."
    `(font-lock-comment-face    ((t (:foreground ,orange-4, :italic nil))))
    `(font-lock-doc-face        ((t (:foreground ,cyan-3 :italic nil))))
    `(font-lock-constant-face   ((t (:foreground ,purple-2))))
-   `(font-lock-number-face     ((t (:inherit font-lock-constant-face))))
-   `(highlight-numbers-number  ((t (:inherit font-lock-constant-face))))
    `(font-lock-function-name-face ((,class (:foreground ,blue-2))))
    `(font-lock-keyword-face ((t (:foreground "#171717"))))
    `(font-lock-string-face  ((t (:foreground ,green-5))))
+   `(font-lock-number-face     ((t (:inherit font-lock-string-face))))
+   `(highlight-numbers-number  ((t (:inherit font-lock-number-face))))
    '(font-lock-type-face    ((t ())))
    '(font-lock-variable-name-face ((t ())))
    '(font-lock-bracket-face ((t ())))
-   `(font-lock-preprocessor-face ((t (:foreground ,alum-4))))
+   `(font-lock-preprocessor-face ((t (:foreground ,red-3))))
+   `(font-lock-misc-punctuation-face ((t (:foreground ,red-3))))
 
    ;; Button and link faces
    `(link ((,class (:underline t :foreground ,blue-3))))
