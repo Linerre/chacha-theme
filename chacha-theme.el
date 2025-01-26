@@ -204,8 +204,12 @@ Semantic, and Ansi-Color faces are included."
    ;; Not italic in Rust string
    `(rust-string-interpolation ((,class (:inherit font-lock-string-face :italic nil))))
 
-   ;; magit
-   `(magit-section-highlight   ((t (:background "grey85"))))
+   ;; magit using GitHub light theme with some tweaks
+   `(magit-section-highlight    ((t (:background "grey85"))))
+   `(magit-diff-added ((t (:foreground ,alum-6 :background "#d2fedb"))))
+   `(magit-diff-added-highlight ((t (:inherit magit-diff-added))))
+   `(magit-diff-removed ((t (:foreground ,alum-6 :background "#ffe4e0"))))
+   `(magit-diff-removed-highlight ((t (:inherit magit-diff-removed))))
 
    ;; CSS
    `(css-property  ((t (:foreground ,cyan-3))))
