@@ -216,23 +216,25 @@ Semantic, and Ansi-Color faces are included."
 
    ;; shell
    `(sh-quoted-exec ((t (:foreground ,red-3))))
+   `(sh-heredoc     ((t (:foreground ,green-3))))
+
    ;; ANSI colors
-   `(ansi-color-black ((,class (:background ,alum-6 :foreground ,alum-6))))
-   `(ansi-color-red ((,class (:background ,red-2 :foreground ,red-2))))
-   `(ansi-color-green ((,class (:background ,green-2 :foreground ,green-2))))
-   `(ansi-color-yellow ((,class (:background ,butter-3 :foreground ,butter-3))))
-   `(ansi-color-blue ((,class (:background ,blue-2 :foreground ,blue-2))))
-   `(ansi-color-magenta ((,class (:background ,purple-2 :foreground ,purple-2))))
-   `(ansi-color-cyan ((,class (:background ,cyan-2 :foreground ,cyan-2))))
-   `(ansi-color-white ((,class (:background ,alum-2 :foreground ,alum-2))))
-   `(ansi-color-bright-black ((,class (:background ,alum-5 :foreground ,alum-5))))
-   `(ansi-color-bright-red ((,class (:background ,red-1 :foreground ,red-1))))
-   `(ansi-color-bright-green ((,class (:background ,green-1 :foreground ,green-1))))
-   `(ansi-color-bright-yellow ((,class (:background ,butter-1 :foreground ,butter-1))))
-   `(ansi-color-bright-blue ((,class (:background ,blue-1 :foreground ,blue-1))))
-   `(ansi-color-bright-magenta ((,class (:background ,purple-1 :foreground ,purple-1))))
-   `(ansi-color-bright-cyan ((,class (:background ,cyan-1 :foreground ,cyan-1))))
-   `(ansi-color-bright-white ((,class (:background ,alum-1 :foreground ,alum-1))))
+   `(ansi-color-black          ((,class (:background ,alum-6 :foreground ,alum-6))))
+   `(ansi-color-red            ((,class (:background ,red-2 :foreground ,red-2))))
+   `(ansi-color-green          ((,class (:background ,green-2 :foreground ,green-2))))
+   `(ansi-color-yellow         ((,class (:background ,butter-3 :foreground ,butter-3))))
+   `(ansi-color-blue           ((,class (:background ,blue-2 :foreground ,blue-2))))
+   `(ansi-color-magenta        ((,class (:background ,purple-2 :foreground ,purple-2))))
+   `(ansi-color-cyan           ((,class (:background ,cyan-2 :foreground ,cyan-2))))
+   `(ansi-color-white          ((,class (:background ,alum-2 :foreground ,alum-2))))
+   `(ansi-color-bright-black   ((,class (:background ,alum-6 :foreground ,alum-6))))
+   `(ansi-color-bright-red     ((,class (:background ,red-2 :foreground ,red-2))))
+   `(ansi-color-bright-green   ((,class (:background ,green-2 :foreground ,green-2))))
+   `(ansi-color-bright-yellow  ((,class (:background ,butter-3 :foreground ,butter-3))))
+   `(ansi-color-bright-blue    ((,class (:background ,blue-2 :foreground ,blue-2))))
+   `(ansi-color-bright-magenta ((,class (:background ,purple-2 :foreground ,purple-2))))
+   `(ansi-color-bright-cyan    ((,class (:background ,cyan-2 :foreground ,cyan-2))))
+   `(ansi-color-bright-white   ((,class (:background ,alum-2 :foreground ,alum-2))))
 
    ;; lsp: disable all lsp syntax highlighting
    ;; https://emacs-lsp.github.io/lsp-mode/page/settings/semantic-tokens/
