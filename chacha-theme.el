@@ -79,15 +79,19 @@ Semantic, and Ansi-Color faces are included."
    `(font-lock-doc-face        ((t (:foreground ,cyan-3 :italic nil))))
    `(font-lock-constant-face   ((t (:foreground ,purple-2))))
    `(font-lock-function-name-face ((,class (:foreground ,blue-2))))
+   `(font-lock-function-call-face ((t ())))
    `(font-lock-keyword-face ((t (:foreground "#171717"))))
    `(font-lock-string-face  ((t (:foreground ,green-5))))
    `(font-lock-number-face     ((t (:inherit font-lock-string-face))))
    `(highlight-numbers-number  ((t (:inherit font-lock-number-face))))
-   '(font-lock-type-face    ((t ())))
+   `(font-lock-type-face    ((t ())))
    '(font-lock-variable-name-face ((t ())))
    '(font-lock-bracket-face ((t ())))
    `(font-lock-preprocessor-face ((t (:foreground ,red-3))))
    `(font-lock-misc-punctuation-face ((t (:foreground ,red-3))))
+
+   ;; highlight-defined
+   `(highlight-defined-variable-name-face ((t ())))
 
    ;; Button and link faces
    `(link ((,class (:underline t :foreground ,blue-3))))
