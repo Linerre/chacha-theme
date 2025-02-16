@@ -23,7 +23,7 @@ Semantic, and Ansi-Color faces are included."
       (butter-1 "#fce94f") (butter-2 "#edd400") (butter-3 "#c4a000")
       (orange-1 "#fcaf3e") (orange-2 "#f57900") (orange-3 "#ce5c00")
       (choc-1 "#e9b96e") (choc-2 "#c17d11") (choc-3 "#8f5902")
-      (green-1 "#73d216") (green-2 "#366c04") (green-3 "#4b634b")
+      (green-1 "#73d216") (green-2 "#366c04") (green-3 "#516c51")
       (blue-1 "#729fcf") (blue-2 "#3465a4") (blue-3 "#204a87")
       (purple-1 "#ad7fa8") (purple-2 "#75507b") (purple-3 "#6b3c77")
       (red-1 "#ef2929")  (red-2 "#cc0000")  (red-3 "#a40000")
@@ -150,7 +150,7 @@ Semantic, and Ansi-Color faces are included."
    `(message-cited-text ((,class (:slant italic :foreground ,alum-5))))
    `(message-separator ((,class (:weight bold :foreground ,green-2))))
    ;; SMerge
-   `(smerge-refined-change ((,class (:background ,purple-1))))
+   `(smerge-refined-change ((,class ())))
    ;; Ediff
    `(ediff-current-diff-A ((,class (:background ,blue-1))))
    `(ediff-fine-diff-A ((,class (:background ,purple-1))))
@@ -171,18 +171,28 @@ Semantic, and Ansi-Color faces are included."
    `(font-latex-subscript-face    ((t (:inherit font-latex-math-face))))
    `(font-latex-superscript-face    ((t (:inherit font-latex-math-face))))
 
+   ;; Markdown
+   `(markdown-header-face-1 ((t (:inherit default))))
+   `(markdown-header-face-2 ((t (:inherit default))))
+   `(markdown-header-face-3 ((t (:inherit default))))
+   `(markdown-header-face-4 ((t (:inherit default))))
+   `(markdown-header-face-5 ((t (:inherit default))))
+   `(markdown-pre-face      ((t (:inherit default))))
+   `(markdown-language-keyword-face ((t (:inherit font-lock-preprocessor-face))))
+
    ;; Org
-   `(org-code    ((t (:foreground ,red-2))))
-   `(org-drawer  ((t (:foreground ,orange-3))))
-   `(org-level-1 ((t (:foreground ,green-5))))
-   `(org-level-2 ((t (:foreground ,blue-2))))
-   `(org-level-3 ((t (:foreground ,orange-4))))
-   `(org-level-4 ((t (:foreground ,cyan-2))))
-   `(org-block   ((t (:foreground ,alum-6 :background "gainsboro"))))
+   `(org-code    ((t (:inherit font-lock-builtin-face))))
+   `(org-drawer  ((t (:inherit font-lock-function-name-face))))
+   `(org-level-1 ((t (:inherit default))))
+   `(org-level-2 ((t (:inherit default))))
+   `(org-level-3 ((t (:inherit default))))
+   `(org-level-4 ((t (:inherit default))))
+   `(org-block   ((t (:inherit default))))
    `(org-table   ((t (:foreground ,cyan-3))))
-   `(org-block-begin-line   ((t (:foreground ,alum-4 :background "gainsboro" :extend t))))
-   `(org-block-end-line     ((t (:foreground ,alum-4 :background "gainsboro" :extend t))))
+   `(org-block-begin-line   ((t (:inherit font-lock-comment-face))))
+   `(org-block-end-line     ((t (:inherit font-lock-comment-face))))
    `(org-headline-done      ((t ())))
+   `(org-meta-line ((t (:inherit font-lock-comment-face))))
 
    ;; Meow
    `(meow-insert-cursor ((t (:background ,blue-3))))
@@ -270,7 +280,13 @@ Semantic, and Ansi-Color faces are included."
    `(lsp-face-semhl-struct ((t ())))
    `(lsp-face-semhl-type ((t ())))
    `(lsp-face-semhl-type-parameter ((t ())))
-   `(lsp-face-semhl-variable ((t ())))))
+   `(lsp-face-semhl-variable ((t ())))
+
+   ;; Rust mode
+   `(rust-keyword2  ((t ())))
+   `(rust-prelude-value ((t (:inherit font-lock-constant-face))))
+
+   ))
 
 (and load-file-name
      (boundp 'custom-theme-load-path)
