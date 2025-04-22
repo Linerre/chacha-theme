@@ -154,8 +154,12 @@ Semantic, and Ansi-Color faces are included."
    ;; Ediff
    `(ediff-current-diff-A ((,class (:background ,blue-1))))
    `(ediff-fine-diff-A ((,class (:background ,purple-1))))
-   `(ediff-current-diff-B ((,class (:background ,butter-1))))
    `(ediff-fine-diff-B ((,class (:background ,orange-1))))
+   `(ediff-current-diff-B ((,class (:background ,butter-1))))
+   `(ediff-odd-diff-A ((,class (:background ,alum-2 :foreground ,orange-4))))
+   `(ediff-odd-diff-B ((,class (:background ,alum-2 :foreground ,purple-2))))
+   `(ediff-even-diff-A ((,class (:background ,alum-2 :foreground ,blue-1))))
+   `(ediff-even-diff-B ((,class (:background ,alum-2 :foreground ,red-2))))
    ;; Flyspell
    `(flyspell-duplicate ((,class (:underline ,orange-1))))
    `(flyspell-incorrect ((,class (:underline ,red-1))))
