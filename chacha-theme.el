@@ -222,7 +222,10 @@ Semantic, and Ansi-Color faces are included."
    ;; Not italic in Rust string
    `(rust-string-interpolation ((,class (:inherit font-lock-string-face :italic nil))))
 
-   ;; magit using GitHub light theme with some tweaks
+   ;; Cider
+   `(cider-reader-conditional-face ((t ())))
+
+   ;; Magit using GitHub light theme with some tweaks
    `(magit-section-highlight    ((t (:background "grey85"))))
    `(magit-diff-added ((t (:foreground ,alum-6 :background "#d2fedb"))))
    `(magit-diff-added-highlight ((t (:inherit magit-diff-added))))
