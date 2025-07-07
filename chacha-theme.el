@@ -227,9 +227,10 @@ Semantic, and Ansi-Color faces are included."
 
    ;; Magit using GitHub light theme with some tweaks
    `(magit-section-highlight    ((t (:background "grey85"))))
-   `(magit-diff-added ((t (:foreground ,alum-6 :background "#d2fedb"))))
+   `(magit-diff-context-highlight ((t (:foreground "grey50"))))
+   `(magit-diff-added ((t (:inherit magit-diffstat-added))))
    `(magit-diff-added-highlight ((t (:inherit magit-diff-added))))
-   `(magit-diff-removed ((t (:foreground ,alum-6 :background "#ffe4e0"))))
+   `(magit-diff-removed ((t (:inherit magit-diffstat-removed))))
    `(magit-diff-removed-highlight ((t (:inherit magit-diff-removed))))
 
    ;; CSS
