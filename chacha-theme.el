@@ -232,6 +232,8 @@ Semantic, and Ansi-Color faces are included."
    `(magit-diff-added-highlight ((t (:inherit magit-diff-added))))
    `(magit-diff-removed ((t (:inherit magit-diffstat-removed))))
    `(magit-diff-removed-highlight ((t (:inherit magit-diff-removed))))
+   `(magit-process-ok ((t (:foreground "LimeGreen"))))
+   `(magit-process-ng ((t (:foreground "red3"))))
 
    ;; CSS
    `(css-property  ((t (:foreground ,cyan-3))))
