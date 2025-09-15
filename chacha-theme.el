@@ -3,12 +3,11 @@
 
 ;;; Commentary:
 
-;;; The colors in this theme is based on the Tango palette, which is avaliable in
-;;; the public domain: http://tango.freedesktop.org/
-;;; It main difference from the original tango is that it follows Alabster's
-;;; philosophy which highlights only those parts that can be reliably recognized.
-;;; In other words, it uses as few colors as possible.
-;;;
+;; The colors in this theme come from the Tango palette, which is in
+;; the public domain: http://tango.freedesktop.org/
+;; It main difference with the original tango is that it follows Alabster's
+;; philosophy which highlights only those parts that can be reliably recognized.
+
 ;;; Code:
 
 (deftheme chacha
@@ -54,11 +53,11 @@ Semantic, and Ansi-Color faces are included."
    `(line-number-current-line ((t (:inherit line-number :background ,choc-1))))
    `(trailing-whitespace ((t (:background ,red-1))))
    ;; Mode line faces
-   `(mode-line ((t (:box unspecified :background ,alum-2 :foreground ,alum-6))))
-   `(mode-line-inactive ((t (:box unspecified :background ,alum-3 :foreground ,alum-4))))
+   `(mode-line ((t (:box nil :background ,alum-2 :foreground ,alum-6))))
+   `(mode-line-inactive ((t (:box nil :background ,alum-4 :foreground ,alum-5))))
    ;; Tab bars
-   `(tab-bar-tab          ((t (:foreground ,cyan-2 :box unspecified))))
-   `(tab-bar-tab-inactive ((t (:background ,alum-3 :foreground ,alum-4 :box unspecified))))
+   `(tab-bar-tab          ((t (:box unspecified))))
+   `(tab-bar-tab-inactive ((t (:background ,alum-4 :foreground ,alum-5 :box unspecified))))
 
    ;; Escape and prompt faces
    `(escape-glyph ((,class (:foreground ,red-3))))
@@ -76,9 +75,9 @@ Semantic, and Ansi-Color faces are included."
 
    ;; Font lock faces
    `(font-lock-builtin-face    ((t (:foreground ,purple-2))))
-   `(font-lock-comment-face    ((t (:foreground ,orange-4, :italic unspecified))))
-   `(font-lock-doc-face        ((t (:foreground ,cyan-3 :italic unspecified))))
-   `(font-lock-constant-face   ((t (:foreground ,purple-2 :bold unspecified))))
+   `(font-lock-comment-face    ((t (:foreground ,orange-4, :italic nil))))
+   `(font-lock-doc-face        ((t (:foreground ,cyan-3 :italic nil))))
+   `(font-lock-constant-face   ((t (:foreground ,purple-2))))
    `(font-lock-function-name-face ((,class (:foreground ,blue-2))))
    `(font-lock-function-call-face ((t ())))
    `(font-lock-keyword-face ((t (:foreground "#171717"))))
@@ -221,7 +220,7 @@ Semantic, and Ansi-Color faces are included."
    ;; Cargo
    `(cargo-process--standard-face ((,class (:inherit default))))
    ;; Not italic in Rust string
-   `(rust-string-interpolation ((,class (:inherit font-lock-string-face :italic unspecified))))
+   `(rust-string-interpolation ((,class (:inherit font-lock-string-face :italic nil))))
 
    ;; Cider
    `(cider-reader-conditional-face ((t ())))
@@ -295,7 +294,9 @@ Semantic, and Ansi-Color faces are included."
 
    ;; Rust mode
    `(rust-keyword2  ((t ())))
-   `(rust-prelude-value ((t (:inherit font-lock-constant-face))))))
+   `(rust-prelude-value ((t (:inherit font-lock-constant-face))))
+
+   ))
 
 (and load-file-name
      (boundp 'custom-theme-load-path)
