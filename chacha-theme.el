@@ -89,6 +89,7 @@ Semantic, and Ansi-Color faces are included."
    '(font-lock-bracket-face ((t ())))
    `(font-lock-preprocessor-face ((t (:foreground ,red-3))))
    `(font-lock-misc-punctuation-face ((t (:foreground ,red-3))))
+   `(font-lock-warning-face ((t (:inherit warning))))
 
    ;; highlight-defined
    `(highlight-defined-variable-name-face ((t ())))
@@ -186,6 +187,9 @@ Semantic, and Ansi-Color faces are included."
 
    ;; Org
    `(org-code    ((t (:inherit font-lock-builtin-face))))
+   `(org-todo    ((t (:inherit error))))
+   `(org-done    ((t (:inherit font-lock-string-face))))
+   `(org-date    ((t (:inherit font-lock-function-name-face))))
    `(org-drawer  ((t (:inherit font-lock-function-name-face))))
    `(org-level-1 ((t (:inherit default))))
    `(org-level-2 ((t (:inherit default))))
@@ -197,6 +201,7 @@ Semantic, and Ansi-Color faces are included."
    `(org-block-end-line     ((t (:inherit font-lock-comment-face))))
    `(org-headline-done      ((t ())))
    `(org-meta-line ((t (:inherit font-lock-comment-face))))
+   `(org-warning ((t (:inherit font-lock-warning-face))))
 
    ;; Meow
    `(meow-insert-cursor ((t (:background ,blue-3))))
