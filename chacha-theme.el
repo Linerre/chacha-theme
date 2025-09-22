@@ -202,6 +202,7 @@ Semantic, and Ansi-Color faces are included."
    `(org-headline-done      ((t ())))
    `(org-meta-line ((t (:inherit font-lock-comment-face))))
    `(org-warning ((t (:inherit font-lock-warning-face))))
+   `(org-checkbox ((t (:inherit nil))))
 
    ;; Meow
    `(meow-insert-cursor ((t (:background ,blue-3))))
