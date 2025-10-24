@@ -49,7 +49,7 @@ Semantic, and Ansi-Color faces are included."
    `(secondary-selection ((,class (:background ,blue-0))))
    `(isearch ((,class (:foreground "#ffffff" :background ,orange-3))))
    `(lazy-highlight ((t (:background ,choc-1))))
-   `(line-number ((t (:inherit default :foreground: ,alum-4))))
+   `(line-number ((t (:inherit default :foreground ,alum-4))))
    `(line-number-current-line ((t (:inherit line-number :background ,choc-1))))
    `(trailing-whitespace ((t (:background ,red-1))))
    ;; Mode line faces
@@ -230,6 +230,7 @@ Semantic, and Ansi-Color faces are included."
 
    ;; Cider
    `(cider-reader-conditional-face ((t ())))
+   `(cider-repl-stderr-face ((t (:inherit error))))
 
    ;; Magit using GitHub light theme with some tweaks
    `(magit-section-highlight    ((t (:background "grey85"))))
