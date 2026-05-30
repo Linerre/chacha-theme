@@ -83,15 +83,13 @@ Semantic, and Ansi-Color faces are included."
    `(font-lock-keyword-face ((t (:foreground "#171717"))))
    `(font-lock-string-face  ((t (:foreground ,green-5))))
    `(font-lock-number-face     ((t (:inherit font-lock-string-face))))
-   `(highlight-numbers-number  ((t (:inherit font-lock-number-face))))
    `(font-lock-type-face    ((t ())))
    '(font-lock-variable-name-face ((t ())))
    '(font-lock-bracket-face ((t ())))
    `(font-lock-preprocessor-face ((t (:foreground ,red-3))))
    `(font-lock-misc-punctuation-face ((t (:foreground ,red-3))))
-   `(font-lock-warning-face ((t (:inherit warning))))
-
-   ;; highlight-defined
+   `(highlight-numbers-number  ((t (:inherit font-lock-number-face))))
+   `(elisp-shorthand-font-lock-face ((t (:foreground nil))))
    `(highlight-defined-variable-name-face ((t ())))
 
    ;; Button and link faces
