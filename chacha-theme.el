@@ -110,6 +110,11 @@ Semantic, and Ansi-Color faces are included."
    `(company-tooltip-scrollbar-thumb   ((t (:background ,blue-2))))
    ;; `(company-template-field            ((t (:inherit yas-field-highlight-face))))
 
+
+   ;; Rocq/Coq
+   `(proof-tactics-name-face  ((t (:foreground ,purple-3))))
+   `(coq-solve-tactics-face   ((t (:foreground ,red-3))))
+
    ;; Gnus faces
    `(gnus-group-news-1 ((,class (:foreground ,purple-3))))
    `(gnus-group-news-1-low ((,class (:foreground ,purple-3))))
